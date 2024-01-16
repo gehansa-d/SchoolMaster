@@ -29,6 +29,11 @@
                 <select asp-for="Student.ClassId" class="form-control" asp-items="ViewBag.Classes"></select>
                 <span asp-validation-for="Student.ClassId" class="text-danger"></span>
             </div>
+            @* <div class="form-group">
+                <label asp-for="Student.DateOfBirth" class="control-label"></label>
+                <input asp-for="Student.DateOfBirth" class="form-control" />
+                <span asp-validation-for="Student.DateOfBirth" class="text-danger"></span>
+            </div> *@
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

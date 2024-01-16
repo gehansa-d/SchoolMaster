@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace SchoolMaster.Models
 {
@@ -6,8 +6,9 @@ namespace SchoolMaster.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        [Column("nvarchar(12)")]
+        [MaxLength(12)]
         public string Nic { get; set; }
+        public DateTime DateOfBirth { get; set; }
         public int ClassId { get; set; }
 
         public virtual Class Class { get; set; }
